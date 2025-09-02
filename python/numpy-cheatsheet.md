@@ -5,22 +5,22 @@ import numpy as np
 
 
 ## Array Creation
-# From list
+From list
 a = np.array([1, 2, 3])
 
-# 2D array
+## 2D array
 b = np.array([[1, 2], [3, 4]])
 
-# Zeros, Ones, Identity
+## Zeros, Ones, Identity
 np.zeros((2, 3))         # 2x3 zero matrix
 np.ones((3, 3))          # 3x3 ones
 np.eye(3)                # Identity matrix
 
-# Ranges
+## Ranges
 np.arange(0, 10, 2)      # [0,2,4,6,8]
 np.linspace(0, 1, 5)     # [0., 0.25, 0.5, 0.75, 1.]
 
-# Random
+## Random
 np.random.rand(2, 3)     # uniform [0,1)
 np.random.randn(2, 3)    # normal dist (mean=0, std=1)
 np.random.randint(0, 10, (3, 3))  # ints
@@ -43,7 +43,7 @@ arr[1:4]      # slice [20,30,40]
 arr[:3]       # first 3
 arr[::2]      # every 2nd element
 
-# 2D
+## 2D
 m = np.array([[1,2,3],[4,5,6],[7,8,9]])
 m[0, 1]       # row0 col1 → 2
 m[:, 0]       # first column
@@ -51,20 +51,20 @@ m[1, :]       # second row
 m[0:2, 1:3]   # submatrix
 
 
-## Operations
+### Operations
 x = np.array([1,2,3])
 y = np.array([4,5,6])
 
-# Element-wise
+Element-wise
 x + y         # [5,7,9]
 x * y         # [4,10,18]
 x ** 2        # [1,4,9]
 
-# Scalar
+Scalar
 x + 10        # [11,12,13]
 x * 2         # [2,4,6]
 
-# Matrix
+Matrix
 m1 @ m2       # matrix multiplication
 
 
